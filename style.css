@@ -231,6 +231,7 @@ nav hr{
     border: solid 1px var(--cinza);
     width: 24.3rem;
     border-radius: 0.5rem;
+    position: relative;
 }
 
 .pro-info h3{
@@ -442,4 +443,26 @@ footer hr{
     justify-content: center;
     padding-bottom: 3rem;
     margin-top: 5rem;
+}
+
+.tag{
+    background-color: var(--azul);
+    border-radius: 0.5rem;
+    width: 8.8rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 0.5rem 2rem;
+    transform: translate(50%, 50%);
+    left: -2%;
+    top: 50%;
+}
+
+.tag p{
+    color: white;
+    font-family: var(--postre);
+    font-size: 1.6rem;
+    font-weight: 400;
 }
