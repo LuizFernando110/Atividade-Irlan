@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+@font-face {
+    font-family: "Quilin";
+    src: url('content/fonts/Quilin Free Demo/Quilin_PersonalUse.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Postre";
+    src: url('content/fonts/Postre Free Demo/demo-postre.otf') format('opentype');
+}
+
+
+:root{
+    --verm: #BE2233;
+    --rwhite: #F4D9D2;
+    --azul: #346D9E;
+    --bege: #CC876A;
+    --bege-claro: #CCAD6E;
+    --off-white: #FFFDF0;
+    --branco: #FFFFFF;
+    --postre: "Postre";
+    --quilin: "Quilin";
+    --tam-p: 1.6rem;
+    --tam-h2: 3.6rem;
+    --tam-card: 8.0rem;
+    --tam-h3: 2.4;
+    --cinza: #D9D9D9;
+}
+
+nav{
+    background-color: var(--off-white);
+    height: 16.3rem;
+    padding-bottom: 2.4rem;
+    align-items: center;
+}
+
+.nav-ulti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    padding-top: 2.4rem;
+}
+
+.nav-cat{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-cat li a{
+    font-family: var(--quilin);
+    color: var(--azul);
+    font-size: 2.4rem;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-cat li {
+    list-style: none;
+}
+
+#barra-pesquisa{
+    width: 496px;
+    height: 46px;
+    display: flex;
+    align-items: stretch;
+}
+
+#barra-pesquisa input{
+    width: 90%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    background-color: var(--rwhite);
+    font-family: var(--quilin);
+    font-size: 2.4rem;
+    padding-left: 2.4rem;
+    padding-top: 0.6rem;
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box;
+    border: solid transparent;
+    outline: none;
+    color: var(--bege-claro);
+}
+
+#barra-pesquisa button{
+    width: 10%;
+    height: 100%;
+    border: solid transparent;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--rwhite);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 0.6rem;
+    
+}
+
+#barra-pesquisa input::placeholder{
+    color: var(--bege);
+    align-items: center;
+    justify-content: center;
+
+}
+
+#conta-atual {
+    background-color: var(--bege);
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conta-atual p {
+    font-family: var(--postre);
+    font-weight: 400;
+    color: var(--off-white);
+    font-size: 1.6rem; 
+}
+
+#func-conta {
+    display: flex;
+    align-items: center;
+}
+
+#func-conta img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+#func-conta-links a{
+    display: block;
+    text-decoration: none;
+    font-family: var(--postre);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--bege);
+}
+
+#func-conta-links a:first-child{
+    color: var(--azul);
+}
+
+nav hr{
+    background-color: var(--rwhite);
+    height: 2px;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    border: none;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+
+#card{
+    position: relative;
+    display: block;
+}
+
+#card img{
+    width: 100%;
+}
+
+.pages{
+    display: flex;
+    gap: 1.6rem;
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    transform: translateX(-50%);
+}
+
+.page:first-child{
+    background-color: var(--azul);
+}
+
+.page{
+    background-color: var(--cinza);
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    border-radius: 50%;
+}
+
+.lancamentos{
+    margin-top: 3rem;
+
+}
+
+.lancamentos h2{
+    font-family: var(--postre);
+    font-size: 3.6rem;
+    color: var(--bege);
+    display: flex;
+    justify-content: center;  
+    margin-bottom: 3rem;  
+}
+
+.produtos{
+    gap: 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.produto{
+    margin-top: 1rem auto;
+    border: solid 1px var(--cinza);
+    width: 24.3rem;
+    border-radius: 0.5rem;
+}
+
+.pro-info h3{
+    font-family: var(--postre);
+    color: var(--bege);
+    font-size: 2.4rem;
+    overflow-wrap: break-word;
+}
+
+.pro-info{
+    padding: 2rem;
+}
+
+.pro-info h4{
+    color: var(--azul);
+    font-size: 2.4rem;
+    font-family: var(--postre);
+    margin-top: 1rem;
+}
+
+.pro-info p{
+    font-family: var(--postre);
+    color: var(--azul);
+    font-size: 1.6rem;
+}
+
+.pro-info a{
+    font-family: var(--postre);
+    color: var(--azul);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.pro-info p:last-child{
+    display: flex;
+    justify-content: center;
+}
+
+#acabou{
+    display: flex;
+    justify-content: center;
+}
+
+.sugestoes{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.sugestao{
+    position: relative;
+    text-align: center;
+}
+
+.sugestao h3{
+    color: white;
+    font-family: var(--postre);
+    font-size: 8rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 30%;
+    left: 50%;
+}
+
+.promo{
+    margin-top: 3rem;
+}
+
+.promo h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bege);
+    font-family: var(--postre);
+    font-size: 3.6rem;
+}
+
+.promo .produtos{
+    margin-top: 3rem;
+    display: flex;
+}
+
+footer{
+    background-color: var(--azul);
+}
+
+.newsletter{
+    display: flex;
+    padding: 3rem 3rem 1rem 3rem;
+    justify-content: center;
+    gap: 40rem;
+}
+
+.apresentacao{
+    font-family: var(--postre);
+    margin-bottom: 2rem;
+}
+
+.apresentacao h3{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.apresentacao h4{
+    color: var(--bege-claro);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+footer{
+    margin-top: 6rem;
+}
+
+footer hr{
+    background-color: var(--rwhite);
+    height: 0.2rem;
+    width: 81.5%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+#email-newsletter{
+    background: var(--rwhite);
+    height: 4.4rem;
+    display: flex;
+    align-items: stretch;
+    border-radius: 0.5rem;
+}
+
+#email-newsletter input{
+    height: 100%;
+    background: transparent;
+    border: none;
+    width: 34.4rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    outline: none;
+    padding-left: 2rem;
+    color: var(--bege-claro);
+    font-family: var(--postre);
+}
+
+#email-newsletter ::placeholder{
+    color: var(--bege-claro);
+    font-family: var(--postre);
+    font-size: 1.6rem;
+}
+
+#email-newsletter button{
+    height: 100%;
+    width: 15.9rem;
+    background-color: var(--bege);
+    border: none;
+    cursor: pointer;
+    font-family: var(--postre);
+    color: var(--rwhite);
+    border-radius: 0.5rem;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 15rem;
+}
+
+.container-redes{
+    display: block;
+    width: 19.8rem;
+}
+
+.logo-2{
+    filter: brightness(0) invert(1);
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.institucional, .atendimento, .formas-pagamento {
+    font-family: var(--postre);
+    font-weight: 400;
+}
+
+.institucional h3, .atendimento h3, .formas-pagamento h3{
+    color: white;
+    font-size: 2rem;
+}
+.institucional a, .atendimento a{
+    color: var(--bege-claro);
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.atendimento li, .institucional li{
+    list-style: none;
+}
+
+.formas-pagamento{
+    text-align: center;
+}
+
+.faq-contato{
+    display: flex;
+    gap: 5rem;
+}
+
+#logo-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    margin-top: 5rem;
+}
