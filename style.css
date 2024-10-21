@@ -92,7 +92,7 @@ nav{
     align-items: center;
     justify-items: center;
     box-sizing: border-box;
-    border: solid transparent;
+    border: none;
     outline: none;
     color: var(--bege-claro);
 }
@@ -317,6 +317,7 @@ nav hr{
 
 footer{
     background-color: var(--azul);
+    margin-top: 6rem;
 }
 
 .newsletter{
@@ -343,10 +344,6 @@ footer{
     font-weight: 400;
 }
 
-footer{
-    margin-top: 6rem;
-}
-
 footer hr{
     background-color: var(--rwhite);
     height: 0.2rem;
@@ -356,7 +353,7 @@ footer hr{
     border-radius: 0.2rem;
 }
 
-#email-newsletter{
+#email-newsletter {
     background: var(--rwhite);
     height: 4.4rem;
     display: flex;
@@ -364,31 +361,27 @@ footer hr{
     border-radius: 0.5rem;
 }
 
-#email-newsletter input{
+#email-newsletter input, #email-newsletter button {
     height: 100%;
-    background: transparent;
     border: none;
-    width: 34.4rem;
-    border-radius: 0.5rem 0 0 0.5rem;
     outline: none;
+    font-family: var(--postre);
+}
+
+#email-newsletter input {
+    width: 34.4rem;
+    background: transparent;
     padding-left: 2rem;
     color: var(--bege-claro);
-    font-family: var(--postre);
 }
 
-#email-newsletter ::placeholder{
+#email-newsletter input::placeholder{
     color: var(--bege-claro);
-    font-family: var(--postre);
-    font-size: 1.6rem;
 }
 
-#email-newsletter button{
-    height: 100%;
+#email-newsletter button {
     width: 15.9rem;
     background-color: var(--bege);
-    border: none;
-    cursor: pointer;
-    font-family: var(--postre);
     color: var(--rwhite);
     border-radius: 0.5rem;
 }
